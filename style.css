@@ -64,7 +64,8 @@ h3.heading{
 
 #portfolio{
     margin-bottom: 2rem;
-    max-width: 96%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .card{
