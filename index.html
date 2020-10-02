@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).click(function (event) {
+            var clickover = $(event.target);
+            var $navbar = $(".navbar-collapse");
+            var _opened = $navbar.hasClass("in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                $navbar.collapse('hide');
+            }
+        });
+    </script>
+
+    <title>Bootstrap Template</title>
+    <style>
+        #menu {
+            transition: all ease 0.3s;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#menu">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#home">
+            <img src="img/nest.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">testimonial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- start landing page -->
+    <div id="home" class="landing">
+    </div>
+    <!-- end landing page -->
+
+    <!-- landing page caption -->
+    <div>
+        <div class="caption mx-auto text-center">
+            <h3>Bootstrap responsive theme</h3>
+            <a href="#about" class="btn btn-outline-light">get started</a>
+        </div>
+    </div>
+    <!-- end home section -->
+
+    <!-- start about section -->
+    <div id="about">
+        <div class="jumbotron">
+            <h3 class="heading">About</h3>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h3>Full screen landing</h3>
+                    <p>NEST features a full screen responsive landing page using bootstrap</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Smooth scrolling</h3>
+                    <p>NEST features a full screen responsive landing page using bootstrap</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Contact form</h3>
+                    <p>NEST features a full screen responsive landing page using bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about section -->
+
+    <!-- start portfolio section -->
+    <div id="portfolio">
+        <div class="container-fluid padding">
+            <h3 class="heading">portfolio</h3>
+            <div class="row">
+                <div class="col-md-6 m-0 p-0">
+                    <img src="img/1.png" alt="">
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                    <img src="img/2.png" alt="">
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                    <img src="img/3.png" alt="">
+                </div>
+                <div class="col-md-6 m-0 p-0">
+                    <img src="img/4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end portfolio section -->
+
+    <!-- start testimonial section -->
+    <div id="testimonials">
+        <div class="container-fluid">
+            <h3 class="heading">testimonials</h3>
+            <div class="row padding">
+                <div class="col-md-6">
+                    <!-- first card -->
+                    <div class="card">
+                        <img class="card-img-top" src="img/5.png" alt="">
+                        <div class="card-body">
+                            <h4>John Lee</h4>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- second card -->
+                    <div class="card">
+                        <img class="card-img-top" src="img/6.png" alt="">
+                        <div class="card-body">
+                            <h4>Jessica Miller</h4>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end testimonial section -->
+
+    <!-- start contact section -->
+    <div id="contact">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <img src="img/nest.png" alt="">
+                    <p>At our core is a collection of design and development solutions that represent everything your
+                        business needs to compete in the modern marketplace.</p>
+                    <strong>our location</strong>
+                    <p>100 street name <br>Our city, AA 10000</p>
+                    <strong>contact info</strong>
+                    <p>(888) 888-8888 <br>email@nest.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact section -->
+
+
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
